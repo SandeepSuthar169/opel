@@ -1,7 +1,44 @@
 
+import { BsAsterisk } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { TiStarFullOutline } from "react-icons/ti";
+import { LuGithub } from "react-icons/lu";
+import { HiMoon } from "react-icons/hi2";
+
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav className="fixed left-0 right-0 z-50 mx-auto flex w-full items-center justify-center top-3">
+      <div className=" relative flex items-center justify-between px-1 w-full max-w-114.5 sm:max-w-259.75 mx-3.5 rounded-2xl bg-white sm:bg-white/50 sm:backdrop-blur-sm shadow-dropdown ">
+
+      <div className=" flex items-center gap-2 rounded-xl py-3 transition-colors duration-300 hover:bg-white/80 left-1 px-3">
+        <Link to="/"  className="m-1.5 p-1.5 flex gap-2 ">
+          <BsAsterisk  className="text-2xl text-gray-800 font-bold " />
+            <span className="font-bold text-xl text-gray-800">Opel</span>
+        </Link>
+      </div>
+
+      <div className="flex items-center justify-between gap-6 font-medium text-sm">
+        <div className="flex items-center border-0">
+          <button className="bg-zinc-900 flex gap-2 border border-zinc-800 hover:bg-zinc-800 text-white px-3 py-2 rounded-full transition-colors">
+            <TiStarFullOutline  className="text-amber-400 text-xl "/>
+            Feedback 
+          </button>
+        </div>
+        <div className="flex items-center">
+          <button className="flex gap-1.5 p-1.5 m-1.5 ">
+            <LuGithub  className="text-gray-900 text-xl "/>
+            <span className="text-gray-800 ">GihHub</span> 
+          </button>
+        </div>
+        <div className="flex items-center">
+          <button className="flex gap-2 p-1.5 m-1.5 px-1">
+            <HiMoon  className="text-gray-900 text-xl "/>
+          </button>
+        </div>
+      </div>
+      </div>
+
+    </nav>
   )
 }
 
