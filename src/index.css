@@ -1,5 +1,34 @@
 @plugin "daisyui";
 @import "tailwindcss";
+
+
+
+
+@theme {
+  --animate-marquee: marquee 20s linear infinite;
+  --color-background: #ffffff;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+:root {
+  color-scheme: light;
+}
+
+
 body {
-    font-family: 'Roboto', sans-serif;
+  background-color: var(--color-background);
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+
+
 }

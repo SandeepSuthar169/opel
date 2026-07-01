@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className=" relative flex items-center justify-between px-1 w-full max-w-114.5 sm:max-w-259.75 mx-3.5 rounded-2xl bg-gray-50 sm:bg-gray-300/50 sm:backdrop-blur-sm shadow-dropdown ">
 
       <div className=" flex items-center gap-2 rounded-xl py-0.5 transition-colors duration-300 left-1 px-2">
-        <Link to="/"  className="m-1.5 p-1.5 flex gap-2 ">
+        <Link to="/"  className="m-1.5 p-1.5 flex gap-2 items-center">
           <BsAsterisk  className="text-2xl text-rose-400 font-bold " />
             <span className="font-bold text-xl text-gray-800">Opel</span>
         </Link>
